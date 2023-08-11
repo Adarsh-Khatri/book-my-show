@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "http://localhost:2410"
+const baseURL = "https://book-my-show-lzvv.onrender.com"
 
 const getApi = async (url) => {
   let { data } = await axios.get(baseURL + url);

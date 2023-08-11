@@ -1,3 +1,14 @@
+# book my show app
+
+![image](https://github.com/Adarsh-Khatri/book-my-show/assets/117830341/5e180d76-f055-4309-8a51-f818ea858eba)
+
+![image](https://github.com/Adarsh-Khatri/book-my-show/assets/117830341/fcf20a16-a687-428d-a529-9c37cba1014e)
+
+Credentials for sign up: 
+![image](https://github.com/Adarsh-Khatri/book-my-show/assets/117830341/8a979e51-10a0-4268-85da-ea4b10293277)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

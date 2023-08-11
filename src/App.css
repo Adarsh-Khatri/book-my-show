@@ -1,38 +1,920 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.search-glass {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+input[type="search"] {
+  width: 40vw;
+}
+
+input[type="search"]::placeholder {
+  color: gray;
+  font-weight: 500;
+}
+
+.city-arrow {
+  font-size: 10px;
+}
+
+.filter-arrow {
+  font-size: 13px;
+}
+
+
+/* --------------------------------------------------- NAVBAR MAIN START*/
+
+
+.navbar-bg {
+  background-color: #333545;
+}
+
+.navbar-footer-bg {
+  background-color: #222539;
+}
+
+.my-row {
+  width: 100vw;
+}
+
+.navbar-login-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-login-user>li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-login-user>li a {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.navbar-login-user>li:first-child:hover,
+.navbar-login-user>li:nth-child(2):hover,
+.navbar-login-user>li:nth-child(3):hover {
+  background-color: lightgray;
+}
+
+.navbar-login-user a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.navbar-login-user>li:last-child a {
+  padding: 0.7rem 2rem;
+}
+
+
+
+/* --------------------------------------------------- NAVBAR MAIN END*/
+
+
+
+/* --------------------------------------------------- SIGN IN START*/
+
+
+.signin-user {
+  border: 2px solid black;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+
+.navbar-google-num {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: black;
+}
+
+.navbar-google-num>div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-google-num>div span:last-child {
+  display: inline-block;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-google-num>div:first-child img {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-google-num>div:last-child span:first-child i {
+  margin-left: 0.8rem;
+  font-size: 1.33rem;
+  color: blueviolet;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* --------------------------------------------------- SIGN IN END*/
+
+
+
+/* --------------------------------------------------- EDIT PROFILE START*/
+
+.editProfile {
+  max-width: 60%;
+  margin: 4vh auto 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+
+.editProfile>div {
+  background: linear-gradient(to right, rgb(44, 1, 49), rgb(179, 57, 57));
+  height: 15vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.editProfile>div div:first-child {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 3.5vw;
+  border: 3px double lightseagreen;
+  background-color: lightyellow;
+  position: absolute;
+  top: 30%;
+  left: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.editProfile>div div:first-child i {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.editProfile>div div:first-child div {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.editProfile>div div:first-child:hover {
+  cursor: pointer;
+}
+
+.editProfile>div div:first-child:hover i {
+  transform: scale(1.5);
+  filter: drop-shadow(1px 1px blueviolet);
+
+}
+
+.editProfile>div span:last-child {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.editProfile>form {
+  margin: 2vw 5vw 0;
+}
+
+.editProfile>form>div:last-child button {
+  padding: 0.5rem 3rem;
+}
+
+/* --------------------------------------------------- EDIT PROFILE START*/
+
+
+
+/* --------------------------------------------------- YOUR ORDERS START*/
+
+/* .yourorders-navbar {} */
+
+
+.yourorders-navbar>a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a.yourorders-navlink {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+
+/* --------------------------------------------------- YOUR ORDERS END*/
+
+
+
+/* --------------------------------------------------- RECENT BOOKING START*/
+
+
+.recentbooking {
+  background-color: whitesmoke;
+  transition: background-color 0.5s ease-in-out;
+}
+
+
+.recentbooking:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+
+/* --------------------------------------------------- RECENT BOOKING END*/
+
+
+
+/* --------------------------------------------------- NAVBAR FOOTER START*/
+
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+  line-height: 13px;
+  margin-top: 10px;
+}
+
+
+.left>p:hover,
+.right>p:hover {
+  cursor: pointer;
+}
+
+
+
+/* --------------------------------------------------- NAVBAR FOOTER END*/
+
+/* --------------------------------------------------- SLIDER STYLING START*/
+
+
+.slider-grand-container {
+  width: 80vw;
+  height: 40vh;
+}
+
+.slider-container {
+  width: 80vw;
+  height: 40vh;
+}
+
+.slider-img,
+.slider-img-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* --------------------------------------------------- SLIDER STYLING END*/
+
+
+/* --------------------------------------------------- LEFT PANEL FILTER START */
+
+
+.filters {
+  width: 16.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+/* --------------------------------------------------- LEFT PANEL FILTER END */
+
+
+/* --------------------------------------------------- MOVIE POSTER START */
+
+
+.movie-img-container {
+  width: 100vw;
+  height: 20vw;
+}
+
+.movie-img-footer {
+  height: 100%;
+  background-color: black;
+}
+
+.movie-img,
+.movie-poster-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.movie-votes {
+  font-size: 80%;
+}
+
+
+/* --------------------------------------------------- MOVIE POSTER END */
+
+
+
+/* --------------------------------------------------- MOVIE DETAILS START */
+
+
+.movie-detail-poster-container {
+  height: 25vw;
+}
+
+.movie-detail-img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-detail-img {
+  width: 70%;
+  height: 100%;
+}
+
+.movie-details-img-footer {
+  width: 70%;
+  /* height: 100%; */
+  padding: 3px 0;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  background-color: rgb(40, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-detail-votes>*:hover {
+  cursor: pointer;
+}
+
+.movie-detail-star {
+  font-size: 30px;
+  color: goldenrod;
+}
+
+.votes-right-chevron {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.movie-detail-rating {
+  background-color: rgb(70, 70, 70);
+  width: 45%;
+}
+
+.modal-btn {
+  font-size: 0.8rem;
+}
+
+
+/* --------------------------------------------------- MOVIE DETAILS END */
+
+/* --------------------------------------------------- BUY TICKETS START */
+
+
+.buytickets-header {
+  background-color: #333545;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buytickets-header>h1 {
+  padding-top: 4vh;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buytickets-header>div span {
+  color: gray;
+}
+
+.buytickets-movie-date {
+  width: 3vw;
+  height: 7vh;
+  padding: 0.3em 0;
+  font-size: 10px;
+}
+
+.buytickets-movie-date>div {
+  padding: 0;
+  margin: 0;
+  width: 3vw;
+  height: 1vw;
+  line-height: 1em;
+  /* border: 1px solid lime; */
+}
+
+.buytickets-movie-date>div:nth-child(2) {
+  font-size: 2.1em;
+  line-height: 1.1rem;
+  font-weight: bold;
+  height: 3.5vh;
+}
+
+.buytickets-movie-date-container>div:nth-child(2) {
+  width: 15vw;
+  height: 100%;
+}
+
+.buytickets-movie-date:hover {
+  cursor: pointer;
+  color: red;
+}
+
+
+.buytickets-movie-info {
+  height: 10vh;
+}
+
+.buytickets-movie-info>div:first-child {
+  cursor: default;
+}
+
+.buytickets-movie-info {
+  font-size: 0.8rem;
+}
+
+.buytickets-movie-info>div:last-child span:first-child {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.6rem;
+}
+
+.buytickets-movie-hall-name {
+  font-size: 0.8rem;
+}
+
+.buytickets-movie-hall-mticket,
+.buytickets-movie-hall-available {
+  color: #49ba8e;
+}
+
+.buytickets-movie-hall-availability>div:last-child span {
+  color: #49ba8e;
+}
+
+.buytickets-movie-hall-availability>div:nth-child(2) {
+  font-size: 0.5rem;
+}
+
+
+.buytickets-movie-hall-food {
+  color: #ffa426;
+}
+
+.buytickets-movie-hall-isCancellable {
+  color: #ffc610;
+}
+
+.buytickets-movie-hall-heart {
+  width: 3rem;
+}
+
+.buytickets-movie-hall-info {
+  width: 6rem;
+}
+
+.buytickets-movie-hall-info>span {
+  font-size: 0.6rem;
+}
+
+.buytickets-movie-hall-time {
+  width: 62vw;
+}
+
+.buytickets-movie-hall-time button {
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------- BUY TICKETS END */
+
+
+/* --------------------------------------------------- SEAT SELECTION HEADER START */
+
+
+.seatselection-header {
+  background-color: #222539;
+  color: white;
+  display: grid;
+  grid-template-columns: 50px 1fr 200px;
+  place-items: center;
+  padding: 0.5rem 0;
+}
+
+.seatselection-header>div:nth-child(2)>span:first-child {
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seatselection-header>div:nth-child(2)>div:last-child {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+.seatselection-header>div:last-child>span i {
+  font-size: 0.6rem;
+}
+
+.seatselection-header>div:last-child>div i {
+  font-size: 1.5rem;
+}
+
+
+/* --------------------------------------------------- SEAT SELECTION HEADER END */
+
+
+
+/* --------------------------------------------------- SEAT SELECTION TIME BUTTONS START */
+
+
+.seatselection-btn-time button {
+  font-size: 0.8rem;
+}
+
+.seatselection-first-unselected-btn-time {
+  border: 1px solid #2dc492;
+  font-size: 0.8rem;
+  color: #2dc492;
+}
+
+.seatselection-unselected-btn-time {
+  border: 0.01rem solid #f60;
+  font-size: 0.8rem;
+  color: #f60;
+}
+
+.seatselection-selected-btn-time {
+  border: 0.01rem solid #2dc492;
+  background-color: #2dc492;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* --------------------------------------------------- SEAT SELECTION TIME BUTTONS END */
+
+
+
+/* --------------------------------------------------- SEATS ARRANGEMENT START */
+
+.seatselection-seating-arrangement {
+  margin: 3rem 0;
+}
+
+.seatselection-row-type {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.seatselection-row-type>div:first-child {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.seatselection-row-type>div:first-child,
+.seatselection-row-seat-name {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.seatselection-row-layout-container {
+  gap: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.seatselection-row-layout>div:first-child {
+  width: 2rem;
+  font-size: 0.9rem;
+}
+
+.seatselection-row-layout>div:last-child {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.seatselection-row-one-seat-cover {
+  /* width: 1.5rem;
+  height: 1.5rem; */
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.seatselection-row-one-seat-selected {
+  background-color: #1ea83c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.seatselection-row-one-seat label {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seatselection-row-one-display-seat {
+  color: #1ea83c;
+  border: 0.01rem solid #1ea83c;
 }
+
+.seatselection-row-one-display-seat:hover {
+  background-color: #1ea83c;
+  /* background-color: red; */
+  color: white;
+}
+
+.seatselection-seat-sold {
+  background-color: lightgray;
+  font-weight: bold;
+  color: white;
+}
+
+.seatselection-screen {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.seatselection-screen>div:first-child {
+  width: 8rem;
+}
+
+.seatselection-screen>div:last-child {
+  width: 100%;
+}
+
+.seatselection-screen img {
+  width: 15rem;
+}
+
+.seatselection-screen>div {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.seatselection-login-error {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------- SEATS ARRANGEMENT END */
+
+
+
+/* --------------------------------------------------- SEAT INFO START */
+
+
+.seatselection-seat-info>div>div>span:first-child {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2px;
+}
+
+
+.seatselection-seat-info>div:first-child span:first-child {
+  border: 1px solid lightgrey;
+  background-color: #fff;
+}
+
+.seatselection-seat-info>div:nth-child(2) span:first-child {
+  background-color: #1ea83c;
+}
+
+.seatselection-seat-info>div:last-child span:first-child {
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+.seatselection-seat-info>div span:last-child {
+  color: gray;
+}
+
+/* --------------------------------------------------- SEAT INFO END */
+
+
+/* --------------------------------------------------- PAY NOW START */
+
+.seatselection-paynow-btn {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  padding: 0.5rem 0;
+}
+
+.seatselection-paynow-btn button,
+.seatselection-paynow-btn button:hover {
+  background-color: #f84464;
+  color: white;
+  padding: 0.5rem 9rem;
+}
+
+.seatselection-google-num {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.seatselection-google-num>div {
+  display: flex;
+  align-items: center;
+}
+
+.seatselection-google-num>div span:last-child {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.seatselection-google-num>div:first-child img {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.seatselection-google-num>div:last-child span:first-child i {
+  margin-left: 0.8rem;
+  font-size: 1.33rem;
+  color: blueviolet;
+}
+
+
+/* --------------------------------------------------- PAY NOW END */
+
+
+
+/* --------------------------------------------------- PAYMENT PAGE START */
+
+
+.paymentpage-payment-img-container {
+  width: 100%;
+  height: 20vh;
+  padding: 0;
+  margin-bottom: 1rem;
+  box-shadow: 2px 4px 8px 0px black;
+}
+
+.paymentpage-payment-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.paymentpage-order-summary>div:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+.paymentpage-order-summary>div:nth-child(3) {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.paymentpage-order-summary>div:nth-child(4) {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+}
+
+.paymentpage-order-summary>div:nth-child(5) {
+  font-size: 1rem;
+}
+
+.paymentpage-order-summary-ticket>div:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.paymentpage-order-summary-line {
+  margin: 1rem 0;
+  border: 1px dashed gray;
+}
+
+.paymentpage-bookasmile>div:first-child span {
+  font-size: 0.8rem;
+}
+
+.paymentpage-bookasmile>div:first-child img {
+  width: 1rem;
+  transform: rotateZ(30deg);
+  margin: 0 0.2rem;
+}
+
+.paymentpage-bookasmile>div:first-child span {
+  margin: 0 1rem;
+}
+
+.paymentpage-order-summary-total-payable-amount {
+  background-color: #fffcdc;
+}
+
+.paymentpage-order-summary-total-payable-amount>div:first-child {
+  font-weight: 500;
+  color: gray;
+}
+
+.paymentpage-order-summary-total-payable-amount>div:last-child {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+
+
+/* --------------------------------------------------- PAYMENT PAGE END */
+
+
+/* --------------------------------------------------- PAYMENT CONFIRM START */
+
+
+.paymentconfirm {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.paymentconfirm h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paymentconfirm a {
+  padding: 0.5rem 5rem;
+}
+
+
+/* --------------------------------------------------- PAYMENT CONFIRM END */
+
+
+
+/* --------------------------------------------------- BUY TICKETS FILTERS START */
+
+
+.mypopover-price>div:hover,
+.mypopover-time>div:hover {
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+}
+
+.mypopover-price>div,
+.mypopover-time>div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+}
+
+.mypopover-price>div label {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.mypopover-time>div label {
+  width: 100%;
+}
+
+.mypopover-time>div label>div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mypopover-time>div label>div span:first-child {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.mypopover-time>div label>div span:last-child {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+
+/* --------------------------------------------------- BUY TICKETS FILTERS END */
